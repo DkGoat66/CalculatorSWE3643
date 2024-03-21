@@ -73,6 +73,7 @@ public class CalculatorEngine
         return Math.Log(float1, float2);
     }
 
+    //changes
     public double RootOfTwoFloats(float float1, float float2)
     {
         return Math.Sqrt(float1);
