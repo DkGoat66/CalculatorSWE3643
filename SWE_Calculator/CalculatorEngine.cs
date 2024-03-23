@@ -22,14 +22,15 @@ public class CalculatorEngine
     {
         if (float2 == 0)
         {
-            return -1;
+            return ;
         }
         return float1 / float2;
     }
 
+    //Rounding to the 8th decimal point before returning a value
     public bool CompareTwoNumbers(float float1, float float2)
     {
-        return float1 == float2;
+        return Math.Round(float1, 8) == Math.Round(float2, 8);
     }
 
     public double PowerFunction(float float1, float float2)
@@ -41,6 +42,10 @@ public class CalculatorEngine
     //to calculate the factorial of a floating point number
     public double FactorialOfFloat(float float1)
     {
+        if (float1 < 0)
+        {
+            return -1;
+        }
         if (float1 >= 0 && float1 <= 1)
         {
             return 1;
